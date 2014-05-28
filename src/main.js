@@ -59,7 +59,8 @@ require(["jquery"], function ($) {
     }
 
     function init() {
-      var gistId = getGistId();
+      var gistId = getGistId()
+        , $dataGist;
 
       if (gistId) {
         requestGistData(gistId, function(response) {
@@ -70,8 +71,8 @@ require(["jquery"], function ($) {
               var element = document.createElement("link")
                 , head = document.getElementsByTagName("head")[0];
 
-              element.type = "text/css"
-              element.rel = "stylesheet"
+              element.type = "text/css";
+              element.rel = "stylesheet";
               element.href = response.stylesheet;
 
               head.appendChild(element);
