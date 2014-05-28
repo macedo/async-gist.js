@@ -39,9 +39,16 @@ module.exports = function(grunt) {
           }
         }
       }
+    },
+    uglify: {
+      dist: {
+        files: {
+         "dist/async-gist.min.js": ["dist/async-gist.js"]
+        }
+      }
     }
   });
 
   grunt.registerTask("init:dev", ["bower"]);
-  grunt.registerTask("compile",  ["jshint:all", "requirejs"]);
+  grunt.registerTask("compile",  ["jshint:all", "requirejs", "uglify:dist"]);
 };
