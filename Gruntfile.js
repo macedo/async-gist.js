@@ -37,14 +37,14 @@ module.exports = function(grunt) {
     requirejs: {
       compile: {
         options: {
-          baseUrl: "src/js",
-          mainConfigFile: "src/js/main.js",
-          include: ["../../bower_components/requirejs/require.js", ],
+          baseUrl: "src",
+          mainConfigFile: "src/main.js",
+          include: ["../bower_components/requirejs/require.js", ],
           name: "main",
           out: "build/main-built.js",
           optimize: "none",
           paths: {
-            jquery: "../../bower_components/jquery/jquery"
+            jquery: "../bower_components/jquery/jquery"
           }
         }
       }
