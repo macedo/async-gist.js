@@ -13,7 +13,7 @@ module.exports = function(grunt) {
       options: {
         jshintrc: ".jshintrc"
       },
-    all: ["Gruntfile.js", "src/*.js"]
+      all: ["Gruntfile.js", "src/*.js"]
     },
     watch: {
       gruntfile: {
@@ -27,8 +27,8 @@ module.exports = function(grunt) {
     },
     availabletasks: {
       tasks: {}
-    }
-    bower : {
+    },
+    bower: {
       install: {
         options: {
           targetDir: "bower_components" }

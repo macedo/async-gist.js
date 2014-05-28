@@ -2,14 +2,12 @@
   "name": "Async Gist",
   "version": "0.0.1",
   "homepage": "https://github.com/rafaelmacedo/async-gist.js",
-  "authors": [
-    ""
-    ],
+  "authors": [""],
   "description": "",
   "private": true,
   "ignore": [
     "**/.*",
-    "bower_components",
+    "bower_components"
   ],
   "dependencies": {
     "requirejs": "~2.1.13",
